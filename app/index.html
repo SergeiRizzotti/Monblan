@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>monblan</title>
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/js-datepicker/dist/datepicker.min.css"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-bg">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="954.906"
+                    height="454.281"
+                    viewBox="0 0 954.906 454.281"
+                >
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                fill: #0b001b;
+                                fill-rule: evenodd;
+                                filter: url(#filter);
+                            }
+                        </style>
+                        <filter
+                            id="filter"
+                            x="-289.594"
+                            y="-31.031"
+                            width="1244.5"
+                            height="485.312"
+                            filterUnits="userSpaceOnUse"
+                        >
+                            <feImage
+                                preserveAspectRatio="none"
+                                x="-289.594"
+                                y="-31.0313"
+                                width="1244.5"
+                                height="485.312"
+                                result="image"
+                                xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTI0NC41IiBoZWlnaHQ9IjQ4NS4zMTIiIHZpZXdCb3g9IjAgMCAxMjQ0LjUgNDg1LjMxMiI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgZmlsbDogdXJsKCNsaW5lYXItZ3JhZGllbnQpOwogICAgICB9CiAgICA8L3N0eWxlPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJsaW5lYXItZ3JhZGllbnQiIHgxPSI2MjIuMjUiIHkxPSI0ODUuMzEyIiB4Mj0iNjIyLjI1IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzAwNDM1NCIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM0Y2I0N2QiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IGNsYXNzPSJjbHMtMSIgd2lkdGg9IjEyNDQuNSIgaGVpZ2h0PSI0ODUuMzEyIi8+Cjwvc3ZnPgo="
+                            />
+                            <feComposite
+                                result="composite"
+                                operator="in"
+                                in2="SourceGraphic"
+                            />
+                            <feBlend result="blend" in2="SourceGraphic" />
+                        </filter>
+                    </defs>
+                    <path
+                        class="cls-1"
+                        d="M945.917-18S656.6-42,635.608,70.5s-88.251,189-190.383,183S257.841,219,208.371,330,50.969,508.5-50.968,397.5-14.991,144-146.909,96s-82.45,76.5-127.422,19.5,19.488-84,64.46-115.5S-11.992-28.5-3-28.5s502.19,9,514.183,9,107.933-18,223.362-9,220.364,12,220.364,12"
+                    />
+                </svg>
+            </div>
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__logo">
+                        <img src="./img/logo.png" alt="logo" />
+                    </div>
+                    <div class="header__content">
+                        <div class="header__content-title">
+                            monblanproject<span>Start on 20-04-2020</span>
+                        </div>
+                        <div class="header__content-stats">
+                            <div class="stats-item"><span>870</span> posts</div>
+                            <div class="stats-item">
+                                <span>11,787</span> followers
+                            </div>
+                            <div class="stats-item">
+                                <span>112</span> following
+                            </div>
+                        </div>
+                        <div class="header__select-date">
+                            <form action="#">
+                                <label>Date</label>
+                                <input
+                                    type="text"
+                                    id="fromDate"
+                                    placeholder="From..."
+                                    autocomplete="off"
+                                    tabindex="1"
+                                />
+                                <div class="closeFromData" id="close-fromDate">
+                                    <img
+                                        src="./img/iconDateClose.png"
+                                        alt="close"
+                                    />
+                                </div>
+                                <div class="rangeFromDate" id="open-fromDate">
+                                    <img
+                                        src="./img/iconDateRange.png"
+                                        alt="date"
+                                    />
+                                </div>
+                                <input
+                                    type="text"
+                                    id="toDate"
+                                    placeholder="To..."
+                                    autocomplete="off"
+                                    tabindex="2"
+                                />
+                                <div class="closeToData" id="close-toDate">
+                                    <img
+                                        src="./img/iconDateClose.png"
+                                        alt="close"
+                                    />
+                                </div>
+                                <div class="rangeToDate" id="open-toDate">
+                                    <img
+                                        src="./img/iconDateRange.png"
+                                        alt="date"
+                                    />
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main id="swup" class="transition-fade">
+            <div class="container-lg">
+                <div class="switch__inner">
+                    <div class="switch-content">
+                        <a href="/page.html" tabindex="3">
+                            <img src="./img/iconGrid.svg" alt="grid"
+                        /></a>
+                        <a href="/index.html" tabindex="4">
+                            <img src="./img/iconColActive.svg" alt="column"
+                        /></a>
+                    </div>
+                </div>
+            </div>
+            <div class="content-col">
+                <div class="container-lg">
+                    <div class="content-col__item">
+                        <div class="item__preview">
+                            <img src="./img/01-col.jpg" alt="image" />
+                            <div class="item__text">
+                                <div class="item__title">
+                                    Today
+                                </div>
+                                <div class="item__icon">
+                                    <span class="icon-heart">128</span
+                                    ><span class="icon-message">131</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item__activity">
+                            <div class="item__title">
+                                14-05-2020
+                            </div>
+                            <div class="item__icon">
+                                <span class="icon-heart">67</span
+                                ><span class="icon-message">22</span>
+                            </div>
+                        </div>
+                        <div class="item__descr">
+                            <div class="item__title">
+                                Image upload
+                            </div>
+                            <div class="item__date-uploaded">
+                                11-05-2020
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-col__item">
+                        <div class="item__preview">
+                            <img src="./img/02-col.jpg" alt="image" />
+                            <div class="item__text">
+                                <div class="item__title">
+                                    Today
+                                </div>
+                                <div class="item__icon">
+                                    <span class="icon-heart">128</span
+                                    ><span class="icon-message">131</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item__activity">
+                            <div class="item__title">
+                                14-05-2020
+                            </div>
+                            <div class="item__icon">
+                                <span class="icon-heart">67</span
+                                ><span class="icon-message">22</span>
+                            </div>
+                        </div>
+                        <div class="item__descr">
+                            <div class="item__title">
+                                Image upload
+                            </div>
+                            <div class="item__date-uploaded">
+                                11-05-2020
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-col__item">
+                        <div class="item__preview">
+                            <img src="./img/03-col.jpg" alt="image" />
+                            <div class="item__text">
+                                <div class="item__title">
+                                    Today
+                                </div>
+                                <div class="item__icon">
+                                    <span class="icon-heart">128</span
+                                    ><span class="icon-message">131</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item__activity">
+                            <div class="item__title">
+                                14-05-2020
+                            </div>
+                            <div class="item__icon">
+                                <span class="icon-heart">67</span
+                                ><span class="icon-message">22</span>
+                            </div>
+                        </div>
+                        <div class="item__descr">
+                            <div class="item__title">
+                                Image upload
+                            </div>
+                            <div class="item__date-uploaded">
+                                11-05-2020
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-col__item">
+                        <div class="item__preview">
+                            <img src="./img/04-col.jpg" alt="image" />
+                            <div class="item__text">
+                                <div class="item__title">
+                                    Today
+                                </div>
+                                <div class="item__icon">
+                                    <span class="icon-heart">128</span
+                                    ><span class="icon-message">131</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item__activity">
+                            <div class="item__title">
+                                14-05-2020
+                            </div>
+                            <div class="item__icon">
+                                <span class="icon-heart">67</span
+                                ><span class="icon-message">22</span>
+                            </div>
+                        </div>
+                        <div class="item__descr">
+                            <div class="item__title">
+                                Image upload
+                            </div>
+                            <div class="item__date-uploaded">
+                                11-05-2020
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-col__item">
+                        <div class="item__preview">
+                            <img src="./img/05-col.jpg" alt="image" />
+                            <div class="item__text">
+                                <div class="item__title">
+                                    Today
+                                </div>
+                                <div class="item__icon">
+                                    <span class="icon-heart">128</span
+                                    ><span class="icon-message">131</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item__activity">
+                            <div class="item__title">
+                                14-05-2020
+                            </div>
+                            <div class="item__icon">
+                                <span class="icon-heart">67</span
+                                ><span class="icon-message">22</span>
+                            </div>
+                        </div>
+                        <div class="item__descr">
+                            <div class="item__title">
+                                Image upload
+                            </div>
+                            <div class="item__date-uploaded">
+                                11-05-2020
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-col__item">
+                        <div class="item__preview">
+                            <img src="./img/06-col.jpg" alt="image" />
+                            <div class="item__text">
+                                <div class="item__title">
+                                    Today
+                                </div>
+                                <div class="item__icon">
+                                    <span class="icon-heart">128</span
+                                    ><span class="icon-message">131</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item__activity">
+                            <div class="item__title">
+                                14-05-2020
+                            </div>
+                            <div class="item__icon">
+                                <span class="icon-heart">67</span
+                                ><span class="icon-message">22</span>
+                            </div>
+                        </div>
+                        <div class="item__descr">
+                            <div class="item__title">
+                                Image upload
+                            </div>
+                            <div class="item__date-uploaded">
+                                11-05-2020
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-col__item">
+                        <div class="item__preview">
+                            <img src="./img/07-col.jpg" alt="image" />
+                            <div class="item__text">
+                                <div class="item__title">
+                                    Today
+                                </div>
+                                <div class="item__icon">
+                                    <span class="icon-heart">128</span
+                                    ><span class="icon-message">131</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item__activity">
+                            <div class="item__title">
+                                14-05-2020
+                            </div>
+                            <div class="item__icon">
+                                <span class="icon-heart">67</span
+                                ><span class="icon-message">22</span>
+                            </div>
+                        </div>
+                        <div class="item__descr">
+                            <div class="item__title">
+                                Image upload
+                            </div>
+                            <div class="item__date-uploaded">
+                                11-05-2020
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-col__item">
+                        <div class="item__preview">
+                            <img src="./img/08-col.jpg" alt="image" />
+                            <div class="item__text">
+                                <div class="item__title">
+                                    Today
+                                </div>
+                                <div class="item__icon">
+                                    <span class="icon-heart">128</span
+                                    ><span class="icon-message">131</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item__activity">
+                            <div class="item__title">
+                                14-05-2020
+                            </div>
+                            <div class="item__icon">
+                                <span class="icon-heart">67</span
+                                ><span class="icon-message">22</span>
+                            </div>
+                        </div>
+                        <div class="item__descr">
+                            <div class="item__title">
+                                Image upload
+                            </div>
+                            <div class="item__date-uploaded">
+                                11-05-2020
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-col__item">
+                        <div class="item__preview">
+                            <img src="./img/09-col.jpg" alt="image" />
+                            <div class="item__text">
+                                <div class="item__title">
+                                    Today
+                                </div>
+                                <div class="item__icon">
+                                    <span class="icon-heart">128</span
+                                    ><span class="icon-message">131</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item__activity">
+                            <div class="item__title">
+                                14-05-2020
+                            </div>
+                            <div class="item__icon">
+                                <span class="icon-heart">67</span
+                                ><span class="icon-message">22</span>
+                            </div>
+                        </div>
+                        <div class="item__descr">
+                            <div class="item__title">
+                                Image upload
+                            </div>
+                            <div class="item__date-uploaded">
+                                11-05-2020
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn__inner">
+                        <button class="btn-bottom">LOAD MORE</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script src="js/libs.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,234 @@
+@media (max-width: 1550px) {
+    .header .header-bg svg {
+        top: -20px;
+        left: -80px;
+    }
+    .content-col,
+    .content-grid {
+        background-position: bottom 30px right -69px;
+    }
+}
+@media (max-width: 1380px) {
+    .header .header-bg svg {
+        left: -120px;
+    }
+    .content-col,
+    .content-grid {
+        background-position: bottom 30px right -110px;
+    }
+}
+@media (max-width: 1270px) {
+    .header .header-bg svg {
+        left: -180px;
+    }
+    .content-col,
+    .content-grid {
+        background-position: bottom 30px right -130px;
+    }
+}
+@media (max-width: 1180px) {
+    .container-lg {
+        max-width: 800px;
+    }
+    .header .header-bg svg {
+        left: -230px;
+    }
+}
+@media (max-width: 1100px) {
+    .header .header-bg svg {
+        left: -290px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .container-lg {
+        max-width: 700px;
+    }
+    .header .header-bg svg {
+        left: -360px;
+    }
+
+    .content-col,
+    .content-grid {
+        background-position: bottom 0px right -160px;
+    }
+}
+@media (max-width: 900px) {
+    .container {
+        max-width: 700px;
+    }
+    .container-lg {
+        max-width: 600px;
+    }
+    .header .header-bg svg {
+        left: -400px;
+    }
+    .header__content {
+        margin-left: 100px;
+    }
+    .content-col,
+    .content-grid {
+        background-position: bottom -50px right -180px;
+    }
+}
+@media (max-width: 855px) {
+    .header .header-bg svg {
+        left: -380px;
+    }
+    .header__select-date form {
+        flex-wrap: wrap;
+    }
+    .header__content-stats {
+        display: none;
+    }
+    .header__content-title span {
+        display: block;
+        width: 160px;
+        text-align: center;
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    .header #toDate {
+        margin-left: 55px;
+    }
+    .header__select-date {
+        margin-top: 10px;
+    }
+    .closeToData,
+    .rangeToDate,
+    #toDate {
+        margin-top: 8px;
+    }
+}
+@media (max-width: 750px) {
+    .header .header-bg svg {
+        left: -410px;
+    }
+}
+@media (max-width: 700px) {
+    .header .header-bg svg {
+        left: -420px;
+    }
+    .container-lg,
+    .container {
+        max-width: 90vw;
+    }
+    .item__activity {
+        display: none;
+    }
+    .container {
+        width: 100%;
+    }
+    .content-col,
+    .content-grid {
+        background: none;
+    }
+    .header__select-date label {
+        display: none;
+    }
+    .header #toDate {
+        margin-left: 0;
+    }
+}
+@media (max-width: 600px) {
+    .header__content {
+        margin-left: 50px;
+    }
+    .header .header-bg svg {
+        left: -430px;
+    }
+    .content-col .item__descr {
+        margin-right: 10px;
+    }
+}
+@media (max-width: 528px) {
+    .container {
+        max-width: 100%;
+    }
+    .header .header-bg svg {
+        width: 477px;
+        height: 286px;
+        left: 0;
+    }
+    .header #fromDate,
+    .header #toDate {
+        outline: none !important;
+        max-width: 72%;
+    }
+    .header__inner {
+        justify-content: space-around;
+    }
+    .header__logo img {
+        margin-left: 10px;
+    }
+}
+@media (max-width: 480px) {
+    .header .header-bg svg {
+        width: 381px;
+        height: 228px;
+    }
+    .header__content-title {
+        font-size: 29px;
+    }
+    .header__content-title span {
+        font-size: 12px;
+    }
+    .header #fromDate,
+    .header #toDate {
+        font-size: 12px;
+        padding-left: 3px;
+    }
+}
+@media (max-width: 400px) {
+    .content-col .item__text {
+        padding-left: 10px;
+    }
+    .header__content {
+        margin-left: 30px;
+    }
+    .header .header-bg svg {
+        width: 304px;
+        height: 182px;
+    }
+    .header__content-title span {
+        width: 118px;
+    }
+    .header__content-title {
+        font-size: 22px;
+    }
+    .header__select-date form {
+        width: 200px;
+    }
+    .header__logo img {
+        transform: scale(0.7);
+    }
+    .header__content {
+        margin-left: 0;
+    }
+    .content-col .item__descr {
+        margin-right: 0;
+    }
+    .content-grid__item {
+        transform: scale(0.9);
+    }
+}
+@media (max-width: 340px) {
+    .header__select-date form {
+        width: 190px;
+    }
+    .content-col .item__text {
+        padding-left: 4px;
+    }
+    .icon-heart,
+    .icon-message {
+        padding-left: 22px;
+    }
+    .icon-message {
+        margin-left: 7px;
+        padding-left: 20px;
+    }
+    .container-lg,
+    .container {
+        max-width: 95vw;
+    }
+}
